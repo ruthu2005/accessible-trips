@@ -1,0 +1,35 @@
+/* High Contrast Mode Styles */
+.high-contrast {
+  /* Background colors */
+  --background: #000000;
+  --foreground: #FFFFFF;
+  --secondary: #FFFFFF;
+  --secondary-foreground: #000000;
+  
+  /* Primary and accent colors with high contrast */
+  --primary: #FFD700;
+  --primary-foreground: #000000;
+  --accent-gold: #FFD700;
+  --accent-gold-foreground: #000000;
+  
+  /* Muted colors adjusted for high contrast */
+  --muted-grey: #CCCCCC;
+  --muted-grey-foreground: #000000;
+  
+  /* Destructive color remains visible */
+  --destructive: #FF0000;
+  --destructive-foreground: #FFFFFF;
+}
+
+.high-contrast * {
+  border-color: #FFFFFF !important;
+}
+
+.high-contrast a,
+.high-contrast button {
+  text-decoration: underline;
+}
+
+.high-contrast img {
+  filter: contrast(1.2);
+}
